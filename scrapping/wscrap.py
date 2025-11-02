@@ -37,3 +37,19 @@ class WebScraper:
 
         except Exception as e:
             self.__wlog.report(str(e))
+
+    def read_webpage_as_html(self, filepath=filepath):
+        try:
+            with open(filepath) as fobj:
+                self.__data = fobj.read()
+        except Exception as e:
+            self.__wlog.report(str(e))
+
+    def change_url(self, url):
+        self.__url = url
+
+    def convert_data_to_bs4(self):
+        self.__soup = BeautifulSoup(self.__data, 'html.parser')
+
+    def parse_soup_to_simple_html(self):
+        news_list = self.__soup.find_all('a')
