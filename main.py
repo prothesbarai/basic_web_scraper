@@ -1,13 +1,7 @@
-from scrapping.wscrap import WebScraper, pro_url
+from scrapping import wlog
+from scrapping import wscrap
 
-# Dummy Logger Class তৈরি করা
-class DummyLogger:
-    def report(self, msg):
-        print("⚠️ Log:", msg)
-
-# এখন WebScraper ক্লাস রান করো
-if __name__ == "__main__":
-    logger = DummyLogger()
-    scraper = WebScraper(pro_url, logger)
-    scraper.retrieve_webpage()
-    scraper.write_webpage_as_html()
+wlog.set_custom_log_info('error_log/error.log')
+news_scrap = wscrap.WebScraper(wscrap.pro_url, wlog)
+news_scrap.retrieve_webpage()
+news_scrap.write_webpage_as_html()
