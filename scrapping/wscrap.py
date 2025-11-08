@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 # Global variable declaration
-pro_url = "https://paikaree.com.bd/"  # Collect Data From Url
+pro_url = "https://prothesbarai.github.io/"  # Collect Data From Url
 filepath = "output/pro.html"  # save collected url data location
 
 
