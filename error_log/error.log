@@ -3,3 +3,10 @@ Traceback (most recent call last):
   File "C:\Users\Prothes\Desktop\basic_web_scraper\main.py", line 6, in <module>
     raise Exception
 Exception
+ERROR:root:'charmap' codec can't decode byte 0x8d in position 125296: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Prothes\Desktop\basic_web_scraper\scrapping\wscrap.py", line 44, in read_webpage_as_html
+    self.__data = fobj.read()
+  File "C:\Users\Prothes\AppData\Local\Programs\Python\Python39\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 125296: character maps to <undefined>
