@@ -1,0 +1,5 @@
+2025-11-08 15:12:21,041 division by zero
+Traceback (most recent call last):
+  File "C:\Users\Prothes\Desktop\basic_web_scraper\main.py", line 7, in <module>
+    var = 1 / 0
+ZeroDivisionError: division by zero
