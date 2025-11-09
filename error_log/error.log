@@ -1,4 +1,4 @@
-2025-11-08 15:12:21,041 division by zero
+2025-11-09 17:14:11,129 division by zero
 Traceback (most recent call last):
   File "C:\Users\Prothes\Desktop\basic_web_scraper\main.py", line 7, in <module>
     var = 1 / 0
