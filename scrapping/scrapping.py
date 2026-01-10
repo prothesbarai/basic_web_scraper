@@ -1,8 +1,6 @@
-class Student:
-    x = 10
+class Asp:
+    user = "Prothes"
 
-    def __init__(self, name):
-        self.name = name
-
-    def display(self):
-        print(f"Student Name : {self.name}")
+    def __init__(self):
+        self.user
+        print(self.user)

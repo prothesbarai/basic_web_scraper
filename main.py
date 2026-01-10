@@ -1,6 +1,7 @@
-from scrapping import scrapping as s
+from scrapping import scrapping as scr
 
-s = s.Student("Prothes")
-s.display()
+age = int(input("Enter Age : "))
+year = int(input("Enter Your Year : "))
 
+scr.Asp()
 
